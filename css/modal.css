@@ -1,0 +1,50 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 99;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+.modal__content {
+    height: auto;
+    width: 50rem;
+    background-color: #5c0000;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 5px 5px 5px #000;
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.modal__content > img {
+    height: 20rem;
+    width: 100%
+}
+
+.modal__content__body {
+    border: 1px solid rgba(255, 255, 255, .25);
+    padding: 1rem;
+}
+
+.modal__content__body__title {
+    letter-spacing: .1rem;
+}
+
+.modal__content__body__action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modal__content__body__action .btn {
+    margin: 0;
+}
