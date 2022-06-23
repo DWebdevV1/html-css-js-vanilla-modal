@@ -6,3 +6,5 @@
 ![Modal open](./app-showcase/showcase02.png)
 
 `serve APPNAME (opened on port 3000 by default)`
+
+- App images by https://pixabay.com/images/search/wallpaper/
