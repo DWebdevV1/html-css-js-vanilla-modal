@@ -63,6 +63,7 @@ header h1 {
     padding: 3rem;
     border: 1px solid var(--primary);
     color: whitesmoke;
+    text-transform: capitalize;
 }
 
 /* ############## SECTION STYLING ############## */
@@ -147,7 +148,6 @@ footer {
     margin-top: 5rem;
     text-align: center;
     font-style: italic;
-    color: var(--dark);
 }
 
 /* ############## MEDIA QUERIES ############# */
