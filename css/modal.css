@@ -4,7 +4,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .77);
     z-index: 99;
     display: none;
     justify-content: center;
@@ -16,13 +16,14 @@
 .modal__content {
     height: auto;
     width: 50rem;
-    background-color: #5c0000;
+    background-color: var(--bg-color);
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     box-shadow: 5px 5px 5px #000;
-    border: 1px solid rgba(255, 255, 255, .5);
+    border: 1px solid rgba(0, 0, 0, .5);
+    color: #000;
 }
 
 .modal__content > img {
@@ -31,12 +32,16 @@
 }
 
 .modal__content__body {
-    border: 1px solid rgba(255, 255, 255, .25);
+    border: 1px solid rgba(0, 0, 0, .1);
     padding: 1rem;
 }
 
 .modal__content__body__title {
     letter-spacing: .1rem;
+}
+
+.modal__content__body__title i {
+    color: var(--primary);
 }
 
 .modal__content__body__action {

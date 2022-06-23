@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
 
+@import "variables.css";
 @import "modal.css";
 
 /* ############## GLOBAL STYLING ############## */
@@ -8,9 +9,9 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: #343434;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
 }
 
 main {
@@ -20,101 +21,109 @@ main {
 }
 
 .btn {
-    border: none;
+    border: 1px solid var(--primary);
+    border-radius: 1rem;
     outline: none;
     padding: 1rem 2rem;
-    color: white;
-    background-color: rgba(210, 0, 0, .9);
+    color: var(--primary);
+    background-color: transparent;
     cursor: pointer;
     font-size: 1rem;
     margin: 2rem 0;
-    width: 12rem;
+    width: 15rem;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: .4rem;
+    transition: background-color .3s, transform .3s;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+    transform: scale(1.1);
+    color: whitesmoke;
 }
 
 /* ############## HEADER STYLING ############## */
 
 header {
-    background: #000 url("../assets/images/bg-main.jpg") center center/cover no-repeat;
+    background: #000 url("../assets/images/img_01.jpg") center center/cover no-repeat;
     height: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    border-top: .2rem solid red;
-    border-bottom: .2rem solid red;
 }
 
 header h1 {
     margin: 0;
     font-size: 4rem;
     text-shadow: 5px 5px 1px #000;
-    background-color: rgba(50, 0, 0, .5);
-    padding: 2rem;
-    border: 1px solid red;
+    background-color: rgba(50, 0, 0, .33);
+    padding: 3rem;
+    border: 1px solid var(--primary);
+    color: whitesmoke;
 }
 
 /* ############## SECTION STYLING ############## */
 
 section {
-    margin: 5rem 0;
     padding: 0 3rem;
-    border-bottom: 1px solid rgba(255, 255, 255, .25);
-}
-
-.section__img {
-    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
 }
 
 .section__action {
     display: flex;
-    justify-content: flex-end;
-}
-
-.section__action--left {
-    justify-content: flex-start;
-}
-
-section .btn:hover {
-    background-color: rgba(150, 0, 0, .9);
+    justify-content: center;
 }
 
 section h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: left;
+    color: #000;
 }
-
-section h2.right {
-    font-size: 2rem;
-    text-align: right;
-}
-
 section h2 > i, header > h1 > i {
-    color: red;
+    color: var(--primary);
 }
 
 section p {
-    text-align: left;
-    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    color: #1a1a1a;
 }
 
-.section__img {
-    height: 25rem;
-    background: #000 url("../assets/images/bg-main.jpg") center center/cover no-repeat fixed;
-}
-
-.section__text__info {
+.section__content {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+}
+
+.section__img, .section__text {
+    flex: 1;
+}
+
+.section__img img {
+    height: 500px;
+    width: 100%;
+    border-radius: 1rem;
 }
 
 /* ############## FOOTER STYLING ############# */
 
 footer {
-    border-top: .2rem solid red;
+    margin-top: 5rem;
     text-align: center;
+}
+
+/* ############## MEDIA QUERIES ############# */
+@media (max-width: 1535px) {
+    .section__content {
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
