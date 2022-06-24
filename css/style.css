@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
 
 @import "variables.css";
+@import "wave-shapes.css";
 @import "modal.css";
 
 /* ############## GLOBAL STYLING ############## */
@@ -18,6 +19,7 @@ main {
     margin: auto;
     text-align: center;
     width: 75vw;
+    position: relative;
 }
 
 .btn {
