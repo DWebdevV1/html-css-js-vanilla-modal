@@ -150,6 +150,11 @@ footer {
     font-style: italic;
 }
 
+footer p {
+    margin: 0;
+    padding: 1rem 0;
+}
+
 /* ############## MEDIA QUERIES ############# */
 @media (max-width: 1535px) {
     .section__content {
