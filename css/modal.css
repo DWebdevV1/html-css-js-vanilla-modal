@@ -22,7 +22,7 @@
     flex-direction: column;
     gap: 2rem;
     border: 1px solid rgba(0, 0, 0, .5);
-    color: var(--secondary);
+    color: var(--white);
     overflow: hidden;
     box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.33);
 }
@@ -44,7 +44,7 @@
 }
 
 .modal__content__body__title i {
-    color: var(--primary);
+    color: var(--red);
 }
 
 .modal__content__body__action {
@@ -58,12 +58,12 @@
     margin: 0;
     background-color: var(--dark);
     border-color: var(--dark);
-    color: var(--secondary);
+    color: var(--white);
 }
 
 .modal__content__body__action .btn:hover {
     background-color: var(--dark);
-    color: var(--secondary);
+    color: var(--white);
 }
 
 @media(max-width: 915px) {
